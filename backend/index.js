@@ -6,6 +6,18 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 
+import path from "path";
+
+// Frontend static serve
+app.use(express.static(path.join(process.cwd(), "../frontend/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(
+    path.join(process.cwd(), "../frontend/build/index.html")
+  );
+});
+
+
 dotenv.config();
 
 const app = express();
