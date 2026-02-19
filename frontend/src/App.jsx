@@ -7,6 +7,7 @@ import Home from "./pages/Home.jsx";
 import Internship from "./pages/Internship.jsx";
 
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -15,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/internship" element={<Internship />} />
-      
+     
       </Routes>
 
    

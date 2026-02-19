@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen pt-24 bg-gradient-to-br from-[#020617] via-[#0f3d3e] to-[#0f766e] text-white px-5">
@@ -26,7 +28,7 @@ const Hero = () => {
           <div href="#contact" className="mt-7 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
            <a href="#contact">
               <button className="w-full sm:w-auto px-7 py-3 rounded-full bg-teal-500 hover:bg-teal-600 transition font-semibold shadow-lg">
-              Get a Free Quote
+              Contact us
             </button>
            </a>
            <a href="#services">
@@ -34,6 +36,11 @@ const Hero = () => {
               View Services
             </button>
            </a>
+            <Link to="/internship">
+              <button className="w-full sm:w-auto px-7 py-3 rounded-full border border-teal-400 hover:bg-teal-400 hover:text-black transition font-semibold">
+                Internships
+              </button>
+            </Link>
           </div>
         </div>
 

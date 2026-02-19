@@ -19,7 +19,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/service", {
+      const res = await fetch("https://intern-production-8566.up.railway.app/service", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -106,6 +106,7 @@ const Contact = () => {
               <option>UI / UX Design</option>
               <option>AI Integration</option>
               <option>SaaS Development</option>
+                 <option>Other</option>
             </select>
 
             {/* Message */}

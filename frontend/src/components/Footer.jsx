@@ -1,6 +1,7 @@
 // Footer.jsx
 // Purpose: Website ko professional closing dena
 // Mobile-first, clean & scalable footer
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -65,7 +66,7 @@ const Footer = () => {
   </h4>
   <ul className="space-y-2 text-sm">
     <li>
-      <a href="#about" className="hover:text-teal-400">
+      <a href="#home" className="hover:text-teal-400">
         About Us
       </a>
     </li>
@@ -74,15 +75,13 @@ const Footer = () => {
         Why Choose Us
       </a>
     </li>
-    <li>
-      <a href="#internship" className="hover:text-teal-400">
+    <Link to="/internship">
+      <a  className="hover:text-teal-400">
         Internships
       </a>
-    </li>
+    </Link>
     <li>
-      <a href="#contact" className="hover:text-teal-400">
-        Contact
-      </a>
+  
     </li>
   </ul>
 </div>
@@ -95,8 +94,8 @@ const Footer = () => {
               Contact
             </h4>
             <ul className="space-y-2 text-sm">
-              <li>📧 contact@cyclonixit.com</li>
-              <li>📞 +91 XXXXX XXXXX</li>
+              <li>📧 Cyclonixit.office@gmail.com</li>
+              <li>📞 +91 94520 97136</li>
               <li>🌍 India (Remote)</li>
             </ul>
           </div>

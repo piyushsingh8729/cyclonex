@@ -47,7 +47,7 @@ const Navbar = () => {
           onClick={() => goToSection("contact")}
           className="hidden md:block px-6 py-2 rounded-full bg-teal-500 text-white text-sm font-semibold"
         >
-          Get a Quote
+          Contact us
         </button>
 
         {/* MOBILE BUTTON */}
@@ -63,7 +63,7 @@ const Navbar = () => {
             <li onClick={() => goToSection("home")}>Home</li>
             <li onClick={() => goToSection("services")}>Services</li>
             <li onClick={() => goToSection("whychoose")}>Why Choose Us</li>
-            <Link to="/internship" onClick={() => setOpen(false)}>Internship</Link>
+            <Link to="/internship" >Internship</Link>
             <li onClick={() => goToSection("contact")}>Contact</li>
           </ul>
         </div>

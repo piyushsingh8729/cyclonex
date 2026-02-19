@@ -29,7 +29,7 @@ const servicesData = [
     icon: "🚀",
   },
   {
-    title: "Maintenance & Support",
+    title: "Other",
     desc: "Reliable support, updates, and performance monitoring for your products.",
     icon: "🛠️",
   },
@@ -44,7 +44,7 @@ const Services = () => {
 };
 
   return (
-    <section   id="services" className="py-20 bg-[#020617] text-white px-5">
+    <section id="services"  className="py-20 bg-[#020617] text-white px-5">
       <div className="max-w-7xl mx-auto">
 
         {/* SECTION HEADER */}
